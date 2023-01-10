@@ -6,11 +6,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8EA8F035
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{B3578FC7-5223-427F-B0D5-617CC6BA10FC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{790688BE-B9A0-4292-883F-30FF5826FF62}"
-	ProjectSection(SolutionItems) = preProject
-		Directory.Build.targets = Directory.Build.targets
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApi", "src\templates\MinimalApi\MinimalApi.csproj", "{4226AC94-779E-418A-A95D-2D332C3348BD}"
 EndProject
 Global
