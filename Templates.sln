@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionF
 		Directory.Build.targets = Directory.Build.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApi", "src\templates\MinimalApi\MinimalApi.csproj", "{4226AC94-779E-418A-A95D-2D332C3348BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,7 +20,12 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B3578FC7-5223-427F-B0D5-617CC6BA10FC} = {09D74081-5841-4596-95EE-270C32AA44BB}
+		{4226AC94-779E-418A-A95D-2D332C3348BD} = {B3578FC7-5223-427F-B0D5-617CC6BA10FC}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4226AC94-779E-418A-A95D-2D332C3348BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4226AC94-779E-418A-A95D-2D332C3348BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4226AC94-779E-418A-A95D-2D332C3348BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4226AC94-779E-418A-A95D-2D332C3348BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
