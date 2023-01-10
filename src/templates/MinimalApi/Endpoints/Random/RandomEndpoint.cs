@@ -17,6 +17,10 @@ public sealed class RandomEndpoint : IEndpoint<RandomRequest, RandomResponse>
 
     public void AddRoute(IEndpointRouteBuilder app)
     {
+#if(includeValidation)
         app.MapGet("/random", async ([AsParameters, Validate] RandomRequest request) => await HandleAsync(request));
+#else
+        app.MapGet("/random", async ([AsParameters] RandomRequest request) => await HandleAsync(request));
+#endif
     }
 }

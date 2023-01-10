@@ -10,5 +10,28 @@
     "tags": {
         "language": "C#",
         "type": "project"
-    }
+    },
+    "symbols": {
+        "includeValidation": {
+            "type": "parameter",
+            "datatype": "bool",
+            "displayName": "Validation support",
+            "description": "Add validation support",
+            "defaultValue": "true"
+        }
+    },
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "condition": "(!includeValidation)",
+                    "exclude": [
+                        "Common/ValidationFilter.cs",
+                        "Configurations/ValidationConfiguration.cs",
+                        "Endpoints/Random/RandomRequestValidator.cs"
+                    ]
+                }
+            ]
+        }
+    ]
 }
