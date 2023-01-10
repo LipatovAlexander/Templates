@@ -17,16 +17,20 @@ public static class EndpointsConfiguration
 
         return services;
     }
-    
-    public static void MapEndpoints(this WebApplication builder)
+
+    public static RouteGroupBuilder MapEndpoints(this WebApplication builder)
     {
         var scope = builder.Services.CreateScope();
+
+        var group = builder.MapGroup("api");
 
         var endpoints = scope.ServiceProvider.GetServices<IEndpoint>();
 
         foreach (var endpoint in endpoints)
         {
-            endpoint.AddRoute(builder);
+            endpoint.AddRoute(group);
         }
+
+        return group;
     }
 }
