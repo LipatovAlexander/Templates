@@ -6,7 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
-    <!--#if (includeValidation) -->
+    <!--#if IncludeValidation -->
     <ItemGroup>
         <PackageReference Include="FluentValidation" Version="11.4.0"/>
         <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0"/>

@@ -1,14 +1,14 @@
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
 
-#if(includeValidation)
+#if IncludeValidation
 services.AddValidators();
 #endif
 services.AddEndpoints();
 
 var app = builder.Build();
 
-#if(includeValidation)
+#if IncludeValidation
 app.MapEndpoints()
     .AddValidationFilter();
 #else

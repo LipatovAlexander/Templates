@@ -12,19 +12,36 @@
         "type": "project"
     },
     "symbols": {
-        "includeValidation": {
+        "ValidationSupport": {
             "type": "parameter",
-            "datatype": "bool",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "Enable",
+                    "description": "Enable validation support"
+                },
+                {
+                    "choice": "Disable",
+                    "description": "Disable validation support"
+                }
+            ],
+            "allowMultipleValues": false,
+            "enableQuotelessLiterals": true,
             "displayName": "Validation support",
             "description": "Add validation support",
-            "defaultValue": "true"
+            "defaultValue": "Enable"
+        },
+        "IncludeValidation": {
+            "type": "computed",
+            "datatype": "bool",
+            "value": "(ValidationSupport == Enable)"
         }
     },
     "sources": [
         {
             "modifiers": [
                 {
-                    "condition": "(!includeValidation)",
+                    "condition": "(!IncludeValidation)",
                     "exclude": [
                         "Common/ValidationFilter.cs",
                         "Configurations/ValidationConfiguration.cs",
