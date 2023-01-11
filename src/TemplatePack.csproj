@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.3</PackageVersion>
+    <PackageVersion>1.4</PackageVersion>
     <PackageId>LipatovAlexander.Templates</PackageId>
     <Title>Lipatov Alexander Templates</Title>
     <Authors>Lipatov Alexander</Authors>

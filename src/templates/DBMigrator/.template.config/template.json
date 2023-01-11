@@ -1,0 +1,17 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Lipatov Alexander",
+  "classifications": [
+    "Common",
+    "Migrator"
+  ],
+  "identity": "LipatovAlexander.DBMigrator",
+  "name": "Fluent Database Migrator",
+  "shortName": "dbmigrator",
+  "sourceName": "DBMigrator",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
